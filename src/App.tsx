@@ -78,14 +78,14 @@ function App() {
               Entusiasta na criação de soluções tecnológicas inovadoras, com ênfase em garantir a qualidade no desenvolvimento de software.
             </p>
             <div className="flex gap-4">
-              <a href='../DanielDamasceno.pdf' download className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex items-center gap-2">
+              <a href='../../DanielDamasceno.pdf' download className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex items-center gap-2">
                 <Download className="w-4 h-4" /> Download CV
               </a>
             </div>
           </div>
           <div className="flex-1 flex justify-center">
             <img
-              src="../daniel_ft.jpeg"
+              src="../../daniel_ft.jpeg"
               alt="Profile"
               className="w-64 h-64 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
             />
