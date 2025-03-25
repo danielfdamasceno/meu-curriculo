@@ -78,14 +78,14 @@ function App() {
               Entusiasta na criação de soluções tecnológicas inovadoras, com ênfase em garantir a qualidade no desenvolvimento de software.
             </p>
             <div className="flex gap-4">
-              <a href='../DanielDamasceno.pdf' download className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex items-center gap-2">
+              <a href='/DanielDamasceno.pdf' download className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex items-center gap-2">
                 <Download className="w-4 h-4" /> Download CV
               </a>
             </div>
           </div>
           <div className="flex-1 flex justify-center">
             <img
-              src="../daniel_ft.jpeg"
+              src="/daniel_ft.jpeg"
               alt="Profile"
               className="w-64 h-64 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
             />
@@ -98,7 +98,7 @@ function App() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Sobre mim</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-          Sou um profissional com mais de 12 anos de experiência em desenvolvimento de softwares, com foco em Quality Assurance. 
+          Sou um profissional com mais de 15 anos de experiência em desenvolvimento de softwares, com foco em Quality Assurance. 
           Sou especializado na validação de testes para aplicações escaláveis, 
           focando na qualidade e experiência do usuário. 
           Trabalhei em empresas líderes, contribuindo para o sucesso de projetos desafiadores 
