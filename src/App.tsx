@@ -2,12 +2,9 @@ import React, { useState } from 'react';
 import {
   Github,
   Linkedin,
-  Mail,
   Moon,
   Sun,
-  Download,
-  MessageSquare,
-  ExternalLink,
+  Download
 } from 'lucide-react';
 
 function App() {
@@ -29,37 +26,55 @@ function App() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="hidden md:flex space-x-8">
-              <button 
+              <button
                 onClick={() => scrollToSection('sobre')}
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Sobre
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('experiencias')}
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                Experiências  
+                Experiências
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('skills')}
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Skills
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('educacao')}
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Educação
               </button>
             </div>
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
-            >
-              {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://github.com/danielfdamasceno"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/daniel-damasceno-10066857/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <button
+                onClick={toggleDarkMode}
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -98,11 +113,11 @@ function App() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Sobre mim</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-          Sou um profissional com mais de 15 anos de experiência em desenvolvimento de softwares, com foco em Quality Assurance. 
-          Sou especializado na validação de testes para aplicações escaláveis, 
-          focando na qualidade e experiência do usuário. 
-          Trabalhei em empresas líderes, contribuindo para o sucesso de projetos desafiadores 
-          e aprimorando minhas habilidades em diversas áreas tecnológicas.
+            Sou um profissional com mais de 15 anos de experiência em desenvolvimento de softwares, com foco em Quality Assurance.
+            Sou especializado na validação de testes para aplicações escaláveis,
+            focando na qualidade e experiência do usuário.
+            Trabalhei em empresas líderes, contribuindo para o sucesso de projetos desafiadores
+            e aprimorando minhas habilidades em diversas áreas tecnológicas.
           </p>
         </div>
       </section>
@@ -209,7 +224,7 @@ function App() {
       <section id="skills" className="py-20 px-6 bg-white dark:bg-gray-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">Skills & Tecnoligas</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Testing & Automation */}
             <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
@@ -422,7 +437,7 @@ function App() {
       <section id="educacao" className="py-20 px-6">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12">Educação & Certificação</h2>
-          
+
           {/* Formal Education */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-8">Formação</h3>
